@@ -2,3 +2,10 @@
   color: white;
   background-color: #1059be;
 }
+
+.blog-entries {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  grid-gap: 1rem;
+}
