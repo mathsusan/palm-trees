@@ -25,7 +25,7 @@ import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { allIcons, NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
-import { LinkButtonComponent } from './link-button/link-button.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -51,9 +51,8 @@ import { LinkButtonComponent } from './link-button/link-button.component';
     FourOhFourComponent,
     AboutPageComponent,
     ContactPageComponent,
-    LinkButtonComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgxBootstrapIconsModule.pick(allIcons)],
+  imports: [MatButtonModule, BrowserModule, AppRoutingModule, NgxBootstrapIconsModule.pick(allIcons)],
   providers: [],
   bootstrap: [AppComponent],
 })
