@@ -1,3 +1,8 @@
-::ng-deep .mdc-button__label {
-  color: yellow;
+::ng-deep {
+  .mdc-button__label {
+    color: yellow;
+  }
+  .mat-mdc-unelevated-button:not(:disabled) {
+    background-color: turquoise;
+  }
 }
